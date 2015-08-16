@@ -1,13 +1,13 @@
 # AutoReply
-######A poke replying TeamSpeak 3 Plugin
+######  A poke replying TeamSpeak 3 Plugin
 AutoReply aims to automate poke replying for TeamSpeak. It is built for informing the user you've received their poke as well as punish them for poke spamming if necessary.
-###Installation
+### Installation
 ---------------
 Installing the plugin is quite straightforward, simply go on your TeamSpeak Client installation folder, plugins and then lua_plugins (`\TeamSpeak 3 Client\plugins\lua_plugin`) and drop the AutoReply folder there. Alternatively you can create a folder in that same directory with a name of your choosing and simply place `init.lua` inside it.
-###Activating
+### Activating
 -------------
 Activating the plugin is simple, after you've placed it in the appropriate folder simply go on your TeamSpeak Client and go on Settings > Plugins. Then make sure `Lua Plugin` is checked, select it and then click on Settings. Select `AutoReply`(or whichever other name you've given to the plugin folder) and then click `OK`(If you don't see this option revise the Installation section). Click `Reload All`, close the window and you should be good to go.
-###Customizing
+### Customizing
 --------------
 Open the `init.lua` file inside the folder where you've put it. On the start of it you should see four variables, `maxpokes`, `maxtime`,`doreply`, `recmsg` and `kickmsg`. These represent the following:
 
