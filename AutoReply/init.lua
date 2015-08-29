@@ -1,12 +1,13 @@
 count = {} --To keep track of poke count.
 haspoked = {} --To index individual users.
 poketime = {} --To save poke times.
-maxpokes = 2 --Max number of pokes minus 1 (In this case 3;3-1=2).
+maxpokes = 3 --Max number of pokes.
 maxtime = 180 --Interval in seconds in which the pokes will be accounted for.
 doreply = "y"
 recmsg = "Received your poke! Please don't poke me again, I'll respond whenever I can." --Message to be sent on poke receival.
 kickmsg = "Don't abuse pokes!" --Message to be sent with kick.
 function onClientPokeEvent(serverConnectionHandlerID, pokerID, pokerName, message, ffIgnored)
+	maxpokes-=1
 	if (pokerID ~= haspoked[pokerID]) then --Checks if there's a "record" of the poker
 			haspoked[pokerID] = pokerID --Creates a record
 			count[pokerID] = 1 --Sets his poke count to one
