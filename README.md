@@ -1,5 +1,5 @@
 # AutoReply
-######  A poke replying TeamSpeak 3 Plugin
+
 AutoReply aims to automate poke replying for TeamSpeak. It is built for informing the user you've received their poke as well as punish them for poke spamming if necessary.
 ### Installation
 ---------------
